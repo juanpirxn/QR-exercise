@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+:root {
+  --ff-primary: "Outfit", sans-serif;
+  --fn-w700: 700;
+  --fn-w400: 400;
+  --fn-h3-color-font: hsl(218, 44%, 22%);
+  --fn-p-color-font: hsl(220, 15%, 55%);
+  --fn-p: 13px;
+  --bg-secondary-color: hsl(0, 0%, 100%);
+  --bg-main-color: hsl(212, 45%, 89%);
+}
+* {
+  font-family: var(--ff-primary);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-main-color);
+  height: 100vh;
+}
+.container-information {
+  box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  padding: 10px 10px 50px 10px;
+  text-align: center;
+  gap: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--bg-secondary-color);
+}
+.container-information img {
+  border-radius: 10px;
+  width: 100%;
+  object-fit: contain;
+}
+.container-information p {
+  padding: 0px 20px;
+  color: var(--fn-primary-color-font);
+  font-size: var(--fn-p);
+  font-weight: var(--fn-w400);
+}
+.container-information h3 {
+  padding: 0px 20px;
+  color: var(--fn-h3-color-font);
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
